@@ -1,3 +1,4 @@
+# ===================================================
 # bsds_utils.py — Core BSDS rotation curve functions
 # Author: K. Patterson (Brane-Structured Dark Sector)
 # ===================================================
@@ -84,7 +85,7 @@ def run_bsds(filename, Mb, rs=10, n=6, save=True):
     plt.legend()
     plt.tight_layout()
 
-    outfile = filename.replacegg(".dat","_BSDS.png")
+    outfile = filename.replace(".dat","_BSDS.png")
     if save:
         plt.savefig(outfile,dpi=300)
     plt.show()
